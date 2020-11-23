@@ -52,7 +52,7 @@ class ExampleUnitTest {
     @Test
     fun getNotesData() {
         try {
-            val response = apiService?.loadNotesData("https://samples.openweathermap.org/","London,uk","b6907d289e10d714a6e88b30761fae22")
+            val response = apiService?.loadNotesData("https://samples.notesdata.org/","London,uk","b6907d289e10d714a6e88b30761fae22")
             assertEquals(response?.title, "")
         } catch (e: IOException) {
             e.printStackTrace()
