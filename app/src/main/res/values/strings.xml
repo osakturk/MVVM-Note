@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MVVM-Notes App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">List</string>
+    <string name="editAndCreate">Create/Edit</string>
+    <string name="newNote">Create New Note</string>
+    <string name="titleCreate">Title</string>
+    <string name="description">Description</string>
+    <string name="imageUrl">Image URL</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="deleteAll">Delete All Notes</string>
+    <string name="item_title">Description Note</string>
+    <string name="edited">(Edited)</string>
+</resources>

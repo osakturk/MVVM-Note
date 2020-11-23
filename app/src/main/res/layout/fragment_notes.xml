@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.osakturk.notetask.ui.note.NotesFragment"/>
+
+        <variable
+            name="viewModel"
+            type="com.osakturk.notetask.ui.note.VMNotes"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/newNote"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="@id/textview_first"
+            android:background="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="@id/textview_first"
+            app:layout_constraintEnd_toEndOf="@id/noteAdapter"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/noteAdapter"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textview_first"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deleteAll"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/red_button"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/noteAdapter"/>
+        <com.osakturk.notetask.ui.component.SlideDownMessageView
+            android:id="@+id/slideDownMessageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
