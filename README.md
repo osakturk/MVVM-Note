@@ -13,9 +13,9 @@ Retrieve Note List to show an example concepts of MVVM and Kotlin
  * Dagger
  * Room
 
-![alt text](https://github.com/osaktur/MVVM-Note/blob/master/app/src/main/res/drawable-v24/Screenshot_1606126301.png?raw=true)
-![alt text](https://github.com/osaktur/MVVM-Note/blob/master/app/src/main/res/drawable-v24/Screenshot_1606126303.png?raw=true)
-![alt text](https://github.com/osaktur/MVVM-Note/blob/master/app/src/main/res/drawable-v24/Screenshot_1606126306.png?raw=true)
+![alt text](https://github.com/osaktur/MVVM-Note/blob/master/screenshots/Screenshot_1606126301.png?raw=true)
+![alt text](https://github.com/osaktur/MVVM-Note/blob/master/screenshots/Screenshot_1606126303.png?raw=true)
+![alt text](https://github.com/osaktur/MVVM-Note/blob/master/screenshots/Screenshot_1606126306.png?raw=true)
 
 
 
